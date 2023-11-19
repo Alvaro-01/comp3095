@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "c82d6e5c-3774-44d4-a5cb-b5c4e80337ff",
+		"name": "Product-Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29886774",
+		"_collection_link": "https://lively-crescent-217971.postman.co/workspace/COMP3095~3892e6cb-aa4c-4b84-8bbe-dd6e26e42fa0/collection/29886774-c82d6e5c-3774-44d4-a5cb-b5c4e80337ff?action=share&source=collection_link&creator=29886774"
+	},
+	"item": [
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Apple ipad 2030\",\r\n    \"description\": \"the nee ipad\",\r\n    \"price\":\"999.99\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http//localhost:8080/api/product/\"put the id here\"",
+					"host": [
+						"http"
+					],
+					"path": [
+						"",
+						"localhost:8080",
+						"api",
+						"product",
+						"\"put the id here\""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Apple ipad 2030\",\r\n    \"description\": \"the new ipad\",\r\n    \"price\": \"200.99\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/product/650d94d2f98bf14281f33de2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"product",
+						"650d94d2f98bf14281f33de2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
